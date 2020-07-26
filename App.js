@@ -16,12 +16,30 @@ function App() {
         <Stack.Screen 
           name="StudentList" 
           component={StudentListScreen} 
-          options={{ title: 'Student List' }}
+          options={{ 
+            title: 'STUDENT LIST',
+            headerStyle: {
+              backgroundColor: '#669999',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
         <Stack.Screen 
           name="StudentDetails" 
           component={StudentDetailsScreen} 
-          options={{ title: 'Student Details'}}
+          options={{ 
+            title: 'STUDENT DETAILS',
+            headerStyle: {
+              backgroundColor: '#669999',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
