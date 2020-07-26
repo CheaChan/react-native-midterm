@@ -1,14 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-export default function StudentDetailsScreen({ navigation }) {
+export default function StudentDetailsScreen({ route, navigation }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Hello</Text>
-        {/* <Text>{navigation.getParam('stuName')}</Text>
-        <Text>{navigation.getParam('stuPhone')}</Text>
-        <Text>{navigation.getParam('stuAge')}</Text>
-        <Text>{navigation.getParam('stuClass')}</Text>
-        <Text>{navigation.getParam('stuProvince')}</Text> */}
+        <Text>Student Name: {route.params.stuName}</Text>
+        <Text>Phone Number: {route.params.stuPhone}</Text>
+        <Text>Student Age: {route.params.stuAge}</Text>
+        <Text>Student Class: {route.params.stuClass}</Text>
+        <Text>Student Province: {route.params.stuProvince}</Text>
       </View>
     );
   }
